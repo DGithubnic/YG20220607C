@@ -46,7 +46,7 @@ void APlayer::Tick()
 
 bool APlayer::IsGoal()
 {
-	for (auto Actor : GEngine->GetWorld()->MyActors)
+	for (auto Actor : GEngine->GetWorld()->MyActors) // #define GEngine Engine::GetEngine()
 	{
 		if (Actor->X == X && Actor->Y == Y)
 		{
